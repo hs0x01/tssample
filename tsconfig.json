@@ -1,15 +1,16 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
+        "target": "ES2022",
+        "module": "CommonJS",
         "lib": [
             "ES2023",
             "DOM"
         ],
-        "module": "ESNext",
-        "target": "ES2022",
+        "outDir": "dst",
         "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "outDir": "dst"
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
     },
     "include": [
         "src/**/*.ts"
